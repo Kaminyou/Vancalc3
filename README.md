@@ -23,3 +23,43 @@ As vancomycin dosage and frequency are added, peak and trough concentration woul
 **css p0:** real peak concentration <br/>
 **css peak:** concentration 2 hr after peak one <br/>
 **css trough:** real trough concentration <br/>
+
+## Formula
+### IBW
+**Male** <br/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= IBW=(Height-80) \times 0.7" style="border:none;"><img/> <br/>
+**Female** <br/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= IBW=(Height-70) \times 0.6" style="border:none;"><img/> <br/>
+### Adjusted Body Weight(ABW)
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= ABW=IBW+0.4 \times (Weight-IBW)" style="border:none;"><img/>
+
+### Def of overweight
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Weight>(IBW \times 1.2)" style="border:none;"><img/>
+
+### Def of underweight
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Weight<IBW" style="border:none;"><img/>
+
+### Ccr
+**Male** <br/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Ccr=\frac{(140-Age)*Weight}{(72*Crea)}" style="border:none;"><img/><br/>
+**Female** <br/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Ccr=\frac{(140-Age)*Weight*0.85}{(72*Crea)}" style="border:none;"><img/><br/>
+
+### Vancomycin Vd
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Vd_{vanco}=0.7*Weight" style="border:none;"><img/>
+
+### k
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= k_{vanco}=\frac{Ccr}{Vd_{vanco}}" style="border:none;"><img/>
+
+### Half-life
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= t_{\frac{1}{2}}=\frac{\ln{2}}{k_{vanco}}" style="border:none;"><img/>
+
+### Css peak (t=0)
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Css_{t=0}=\frac{Dose}{Vd_{vanco}}*\frac{1}{(1-e^{-k_{vanco}*Freq})}" style="border:none;"><img/>
+
+### Css peak (t=2)
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Css_{t=2}=Css_{peak} * e^{-k_{vanco}*2}" style="border:none;"><img/>
+
+### Css trough
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= Css_{trough}=Css_{peak} * e^{-k_{vanco}*Freq}" style="border:none;"><img/>
+
