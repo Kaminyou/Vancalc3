@@ -2,7 +2,7 @@
 This is an app for calculating vancomycin peak and trough concentration by patient's clinical data.
 
 ## Download apk.
-Cick [HERE](https://drive.google.com/file/d/1ljjtdPIW8FZG13WIulXnkqvkETJ0D7ux/view?usp=sharing) to download apk.
+Click [HERE](https://drive.google.com/file/d/1ljjtdPIW8FZG13WIulXnkqvkETJ0D7ux/view?usp=sharing) to download apk.
 
 ## User guide
 Different Ccr is calculated based on if height is given or not. <br/>
