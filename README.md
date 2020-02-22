@@ -31,7 +31,7 @@ As vancomycin dosage and frequency are added, peak and trough concentration woul
 **Female** <br/>
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= IBW=(Height-70) \times 0.6" style="border:none;"><img/> <br/>
 ### Adjusted Body Weight(ABW)
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= ABW=IBW + (0.4*(Weight-IBW))" style="border:none;"><img/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= ABW=IBW add (0.4*(Weight-IBW))" style="border:none;"><img/>
 
 ### Def of overweight
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= Weight>(IBW \times 1.2)" style="border:none;"><img/>
