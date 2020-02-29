@@ -1,5 +1,5 @@
 # Vancalc3
-Update to version 4.0. Add calibration mode.
+Update to version 4.0. Add calibration mode. <br/>
 This is an app for calculating vancomycin peak and trough concentration by patient's clinical data.
 
 ## Download apk.
