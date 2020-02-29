@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CalibrationActivity">
 
     <LinearLayout
         android:id="@+id/LinearLayout"
@@ -27,34 +27,30 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
                 android:text="Age (yr)" />
 
             <EditText
                 android:id="@+id/txtAge"
-                android:layout_width="140dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
                 android:ems="10"
                 android:inputType="number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0"
                 android:text="Weight (kg)" />
 
             <EditText
                 android:id="@+id/txtWeight"
-                android:layout_width="140dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:ems="10"
@@ -68,7 +64,7 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0"
@@ -104,36 +100,31 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0"
                 android:text="Height (cm)" />
 
             <EditText
                 android:id="@+id/txtHeight"
-                android:layout_width="140dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:ems="10"
-                android:inputType="numberDecimal"
-                android:text="0" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/textView30"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0"
                 android:text="Crea (mg/dl)" />
 
             <EditText
                 android:id="@+id/txtCrea"
-                android:layout_width="140dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:ems="10"
@@ -147,14 +138,70 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="160dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0"
-                android:text="Vancomycin dose (mg)" />
+                android:text="Peak (ug/ml)" />
 
             <EditText
-                android:id="@+id/txtVancodose"
-                android:layout_width="140dp"
+                android:id="@+id/txtPeak"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="Time" />
+
+            <EditText
+                android:id="@+id/txtPeakTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number"
+                android:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="Trough (ug/ml)" />
+
+            <EditText
+                android:id="@+id/txtTrough"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="Time" />
+
+            <EditText
+                android:id="@+id/txtTroughTime"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:ems="10"
@@ -167,19 +214,58 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="160dp"
+                android:id="@+id/textView17"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0"
-                android:text="Vancomycin freq (hr)" />
+                android:text="Previous freq (hr)" />
 
             <EditText
-                android:id="@+id/txtVancofreq"
-                android:layout_width="140dp"
+                android:id="@+id/txtPreFreq"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:ems="10"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="New dose (mg)" />
+
+            <EditText
+                android:id="@+id/txtNewDose"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="New freq (hr)" />
+
+            <EditText
+                android:id="@+id/txtNewFreq"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number" />
         </LinearLayout>
 
         <Button
@@ -187,7 +273,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:onClick="button_Click"
-            android:text="Calculate"
+            android:text="Calibration"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <LinearLayout
@@ -196,14 +282,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView16"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="Ccr (L/hr)             " />
+                android:text="Actual k (1/hr)      " />
 
             <TextView
-                android:id="@+id/txtCcr"
+                android:id="@+id/txtAK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -223,7 +309,7 @@
                 android:text="Css p0 (ug/ml)        " />
 
             <TextView
-                android:id="@+id/txtP"
+                android:id="@+id/txtAP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -243,7 +329,7 @@
                 android:text="Css peak (ug/ml)   " />
 
             <TextView
-                android:id="@+id/txtPeak"
+                android:id="@+id/txtAPeak"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -263,7 +349,26 @@
                 android:text="Css trough (ug/ml)" />
 
             <TextView
-                android:id="@+id/txtTrough"
+                android:id="@+id/txtATrough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="New Css p0 (ug/ml)" />
+
+            <TextView
+                android:id="@+id/txtANP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -272,18 +377,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textView29"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="k (1/hr)      " />
+                android:text="New Css peak(ug/ml)" />
 
             <TextView
-                android:id="@+id/txtK"
+                android:id="@+id/txtANPeak"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -292,18 +397,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/textView32"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="t1/2 (hr)    " />
+                android:text="New Css trough(ug/ml)" />
 
             <TextView
-                android:id="@+id/txtT"
+                android:id="@+id/txtANTrough"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -317,7 +422,7 @@
 
             <TextView
                 android:id="@+id/textView20"
-                android:layout_width="90dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="Other_note" />
@@ -329,34 +434,6 @@
                 android:layout_weight="0"
                 android:text="None" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Explanation"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Css p0: time = 0hr"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Css peak: time = 2hr"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Css trough: time = freq hr"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
             android:id="@+id/textView26"

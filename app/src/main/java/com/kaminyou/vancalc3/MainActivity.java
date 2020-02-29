@@ -1,7 +1,11 @@
 package com.kaminyou.vancalc3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -20,6 +24,27 @@ public class MainActivity extends AppCompatActivity {
             return false;
 
         return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.mainMode:
+                break;
+
+            case R.id.calibMode:
+                Intent intent = new Intent(MainActivity.this, CalibrationActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void button_Click(View view){
@@ -43,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         TextView txtOther = (TextView) findViewById(R.id.txtOther);
 
         if (isEmpty(txtAge)){
-            txtOther.setText("Not Enough Data");
+            txtOther.setText("No Enough Data");
             return;
         }
         else {
@@ -51,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (isEmpty(txtWeight)){
-            txtOther.setText("Not Enough Data");
+            txtOther.setText("No Enough Data");
             return;
         }
         else {
@@ -67,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (isEmpty(txtCrea)){
-            txtOther.setText("Not Enough Data");
+            txtOther.setText("No Enough Data");
             return;
         }
         else {
